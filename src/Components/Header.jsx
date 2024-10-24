@@ -9,7 +9,7 @@ import { Badge } from "antd";
 import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ShopContext } from "../Context/ShopContext";
-import logoImg from "../assets/logo.png";
+// import logoImg from "../assets/logo.png";
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -24,7 +24,11 @@ const Header = () => {
           to={"/"}
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
-          <img src={logoImg} alt="" className="w-20 h-20 p-1  rounded-full" />
+          <img
+            src={"logo.png"}
+            alt=""
+            className="w-20 h-20 p-1  rounded-full"
+          />
           <span className="ml-3 text-xl">FabricFusion</span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hidden md:flex">
